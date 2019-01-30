@@ -1,0 +1,35 @@
+.Intro{
+	text-align:center;
+	color: yellow;
+	background-color: red;
+	font-size: 50px;
+}
+
+#intro_pizza_pic{
+	border-top: 5px solid white;
+	
+}
+h1{
+	font-size: 35px;
+}
+
+.menu{
+	text-align: center;
+	background-color: pink;
+}
+
+#orderbutton{
+	text-align:center;
+}
+
+#cart{
+	text-align:center;
+}
+
+.container{
+	font-style: italic;
+}
+
+h3{
+	font-style: bold;
+}
