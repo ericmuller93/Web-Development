@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf=8">
+		<title>Basic HTML Template</title>
+	</head>
+	<body>
+        <h1> Array Challenge</h1>
+        <h2> Array 1 is [1,2,3] Array 2 is [3,4,5]</h2>
+        <h2>Array 1 total = <span id="num1"></span></h2>
+        <h2>Array 2 total = <span id="num2"></span></h2>
+        <h2>The mean of both = <span id="num3"></span></h2>
+	<script>
+    
+        var array1 = [1,2,3];
+        var array2 = [3,4,5];
+        var array1Total = 0;
+        var array2Total = 0;
+
+        function array1Count() {
+            for(i=0; i < array1.length; i++){
+                array1Total = (array1Total + array1[i]);
+            }
+        };
+
+        function array2Count() {
+            for(m=0; m < array2.length; m++){
+                array2Total = (array2Total + array2[m]);
+            }
+        };
+    
+    array1Count();
+    array2Count();
+    arraysLength = array1.length + array2.length;
+    mean = ((array1Total+array2Total)/arraysLength);
+    document.getElementById("num1").innerHTML = array1Total;
+    document.getElementById("num2").innerHTML = array2Total;
+    document.getElementById("num3").innerHTML = mean;
+    </script>
+		
+	</body>
+</html>
